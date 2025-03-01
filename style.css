@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
     font-family: "Roboto", serif;
 }
 
@@ -35,6 +36,10 @@ body {
 
 .main-content {
     background-color: #D3E3EC;
+    padding: 15px 15px 40px 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 /*color de las tarjetas: #F0B429 */
@@ -134,4 +139,61 @@ button {
     font-weight: 600;
     justify-self: center;
     margin-right: 10px;
+}
+
+.card {
+    background-color: white;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px #888888;
+}
+
+.etiqueta {
+    height: 100%;
+    grid-row: 1 / 3;
+    background-color: #F0B429;
+    border-radius: 15px 0 0 15px;
+}
+
+.text {
+    align-self: center;
+    padding: 5px;
+}
+
+.text p {
+    color: #888888;
+}
+
+.projects {
+    grid-row: 1 / 3;
+}
+
+.projects h2 {
+    margin-bottom: 10px;
+    height: 3%;
+}
+
+.projects-container {
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px 20px;
+}
+
+.card-icons {
+    align-self: end;
+    justify-self: end;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card-icons svg {
+    width: 25px;
+    height: 25px;
 }
